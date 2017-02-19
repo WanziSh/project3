@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/swiper-3.3.1.min.css"/>
+		<script src="lib/flexible.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div ng-view >
+			
+		</div>
+		<div id="footer" ng-show="rootIsFooterShow">
+			<ul>
+				<li><p><img src="./img/home/4.png" alt="" /></p><a href="#/home">首页</a></li>
+				<li><p><img src="./img/home/1.png" alt="" /></p><a href="#/sort">分类</a></li>
+				<li><p><img src="./img/home/2.png" alt="" /></p><a href="#/cart">购物车</a></li>
+				<li><p><img src="./img/home/3.png" alt="" /></p><a href="#/mine">我的</a></li>
+			</ul>
+		</div>
+		<div id="introduceFooter" ng-show="rootIsIntroduceFooterShow">
+			<div class="circle">
+				<ul>
+					<li><div><img src="./img/home/10.png" alt="" /></div><a href="#">收藏</li>
+					<li><div><img src="./img/home/8.png" alt="" /></div><a href="#">客服</a></li>
+					<li><div><img src="./img/home/9.png" alt="" /></div><a href="#/cart">购物车</a></li>
+					<li class="addcart">加入购物车<span class="transmit"> 0 </span></li>
+				</ul>
+				<div class="aside">0</div>
+			</div>
+			
+		</div>
+		<script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular-css.js" type="text/javascript" charset="utf-8"></script>
+		<script src="app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/controllers.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

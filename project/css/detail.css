@@ -1,0 +1,131 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+.detail{
+	width: 100%;
+	position: relative;
+}
+.detail .special{
+	width: 100%;
+}
+.detail .special ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	font-size: 0.533333rem;
+	height: 1.173333rem;
+}
+.detail ul li:nth-last-of-type(1){
+	width: 1.066667rem;
+	
+}
+.detail ul li:nth-last-of-type(2){
+	width: 70%;
+
+}
+.detail ul li:nth-last-of-type(3){
+	width: 1.066667rem;
+	
+} 
+.detail .yincang{
+	width: 3.2rem;
+	height: 4.053333rem;
+	position: absolute;
+	right: 0.533333rem;
+	top: 1.173333rem ;
+	background-color: black;
+	text-align: center;
+	display: none;
+	z-index: 5;
+	
+}
+.detail .yincang a{
+	list-style: none;
+	color: white;
+	font-size:  0.533333rem;
+	line-height: 1.013333rem;
+}
+.detail .show{
+	width: 100%;
+}
+.detail .show a{
+	display: block;
+}
+.detail .show a{
+	width: 100%;
+	height:7.281333rem;
+	/*border: 0.026667rem solid red;*/
+	display: block;
+}
+.detail .show a img{
+	width: 100%;
+	height: 100%;
+}
+.detail .show a:nth-of-type(2){
+	width: 100%;
+	height:1.333333rem ;
+}
+.detail .show a:nth-of-type(2) img{
+	width: 100%;
+	height: 100%;
+}
+.detail .oneeightfivefive{
+	width: 100%;
+	height: 3.850667rem;
+}
+.detail .oneeightfivefive .water{
+	float: left;
+	width: 3.6336rem;
+	height: 3.6336rem;
+}
+.detail .oneeightfivefive .water img{
+	width: 100%;
+	height: 100%;
+}
+/*.detail .oneeightfivefive .water img[src]{
+	opacity: 1;
+}*/
+.detail .oneeightfivefive .water-content{
+	float: right;
+	width: 5.759467rem;
+	height: 3.6336rem;
+	position: relative;
+	font-size:0.5rem;
+}
+.detail .oneeightfivefive .water-content .p_title{
+	font-size:1rem;
+}
+.detail .oneeightfivefive .water-content .p_price{
+	position: absolute;
+	bottom: 0.266667rem;
+	left: 0;
+	font-size: 0.4rem;	
+	color: red;
+	
+}
+.detail .oneeightfivefive .water-content .p_purchase{
+	position: absolute;
+	width: 2.327467rem;
+	height: 0.749333rem;
+	bottom: 0.266667rem;
+	right: 10%;
+	background-color: red;
+	font-size: 0.4rem;
+	line-height: 0.749333rem;
+	text-align: center;
+}
+.detail .newworld a{
+	width: 100%;
+	height: 1.656267rem;
+}
+.detail .newworld a img{
+	width: 100%;
+	height: 100%;
+}
+
+
+

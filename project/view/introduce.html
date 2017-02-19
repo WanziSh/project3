@@ -1,0 +1,87 @@
+<div class="introduce">
+	<div class="specialist">
+		<ul class="specalist-content">
+			<li ng-click="introduceCtrl.goBackTo();"> < </li>
+			<li><a href="#">商品</a></li>
+			<li><a href="#/cartadd/{{ introduceCtrl.affirmId }}">详情</a></li>
+			<li><a href="#">评价</a></li>
+			<li ng-click="introduceCtrl.reveal()">...</li>
+		</ul>
+	</div>
+	<div class="no">
+		<a href="#/home" ><p>首页</p></a>
+		<a href="#/sort" ><p>分类搜索</p></a>
+		<a href="#cart" ><p>购物车</p></a>
+		<a href="#/mine" ><p>我的</p></a>
+	</div>
+	<div class="commodity">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<a href="#" ng-repeat="shuzi in introduceCtrl.imgs" class="swiper-slide "><img ng-src="{{ shuzi.url }} "/></a>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="countdown">
+		<div class="countdown-content">
+			<img src="./img/home/6.png"/>
+			<span>&nbsp仅剩:</span>
+			<span>{{introduceCtrl.day}}</span>
+			<span>天</span>
+			<span>{{introduceCtrl.hour}}</span>
+			<span>时</span>
+			<span>{{introduceCtrl.second}}</span>
+			<span>分</span>
+			<span>{{introduceCtrl.min}}</span>
+			<span>秒</span>
+		</div>
+	</div>
+	<div class="from">
+		<div class="from-content" >
+			<span>自营</span>
+			<span>{{ introduceCtrl.xiangqingObj.name }}</span>
+			<p>La Closerie de Camensac 2011</p>
+			<p>{{ introduceCtrl.xiangqingObj.price }}</p>
+		</div>
+	</div>
+	<div class="goods">
+		<div class="good-content">
+			<div class="msg">
+				<span>商品信息</span>
+				<span> > </span>
+			</div>
+			<div class="number">
+				<span class="select">选择数量</span>
+				<div ng-repeat="item8 in introduceCtrl.affirm">
+					<p class="cut" ng-click="introduceCtrl.cuts(item8.id)"> - </p>
+					<p class="tonumber"> {{ item8.numberli }} </p>
+					<p class="added" ng-click="introduceCtrl.addeds(item8.id)" > + </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="aftersale">
+		<div class="aftersale-content">
+			<p class="deliver">
+				<span>送货至&nbsp北京市 北京市 西城区</span>
+				<span> > </span>
+			</p>
+			<p class="more">
+				<span><strong>有货&nbsp</strong> 由   <strong>网酒网 </strong>  发货，并提供售后服务</span>
+			</p>
+		</div>
+	</div>
+	<div class="appraise">
+		<div class="appraise-content">
+			<span>商品评价(84)</span>
+			<span>查看全部   ></span>
+		</div>
+	</div>
+	<div class="lastforlast">
+		
+	</div>
+	
+	
+	
+	
+</div>

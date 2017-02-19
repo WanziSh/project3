@@ -1,0 +1,22 @@
+<div class="cartadd">
+	<div class="editor">
+		<div class="editor-content">
+			<a href="#/introduce/{{cartaddCtrl.backId}}"><span > < </span></a>
+			<span>购物车</span>
+			<span>编辑</span>
+		</div>
+	</div>
+	<div class="product" ng-class="{true:'class2',false:'class1'}[cartaddCtrl.flag]">
+		<div class="product-content" ng-repeat="item5 in cartaddCtrl.myArr">
+			<div class="ofcourse"><input type="checkbox"  /></div>
+			<a href=""><img  ng-src="{{ item5.url }}" alt="" /></a>
+			<div class="cartFirst">
+				<p>{{ item5.name }}</p>
+				<span>{{ item5.price }}</span>
+				<p class="lastcut" ng-click="cartaddCtrl.cutdown(item5.id)" > - </p>
+				<p class="lastnumber" > {{ item5.numberli }}</p>
+				<p class="lastadd" ng-click="cartaddCtrl.addition(item5.id)" > + </p>
+			</div>
+		</div>
+	</div>
+</div>

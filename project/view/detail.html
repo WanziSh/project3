@@ -1,0 +1,45 @@
+<div class="detail">
+	<div class="special">
+		<ul class="specal-content">
+			<li ng-click="detailCtrl.goBack();"> < </li>
+			<li>名庄专题</li>
+			<li ng-click="detailCtrl.xianshi()">...</li>
+		</ul>
+	</div>
+	<div class="yincang">
+		<a href="#/home" ><p>首页</p></a>
+		<a href="#/sort" ><p>分类搜索</p></a>
+		<a href="#cart"><p>购物车</p></a>
+		<a href="#/mine"><p>我的</p></a>
+	</div>
+	<div class="show">
+		<a href="#" ng-repeat="item in detailCtrl.data"><img ng-src="{{item.url}}" alt="" /></a>
+	</div>
+	<div class="oneeightfivefive" ng-repeat="item1 in detailCtrl.wine">
+		<a href="#/introduce/{{ item1.id }}" class="water" ><img class="detailImg"  ng-src="{{item1.url}}" alt="" /></a>
+		<div class="water-content" >
+			<p class="p_tilte">{{item1.name}}</p>
+			<span class="p_price">{{item1.price}}</span>
+			<span class="p_purchase">{{item1.purchase}}</span>
+		</div>
+	</div>
+	<div class="newworld">
+		<a href="#" ng-repeat="item2 in detailCtrl.third"><img ng-src="{{item2.url}}" alt="" /></a>
+	</div>
+	<div class="oneeightfivefive" ng-repeat="item3 in detailCtrl.fourth">
+		<div class="water" ><img class="detailImg" ng-src="{{item3.url}}" alt="" /></div>
+		<div class="water-content" >
+			<p class="p_tilte">{{item3.name}}</p>
+			<span class="p_price">{{item3.price}}</span>
+			<span class="p_purchase">{{item3.purchase}}</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
