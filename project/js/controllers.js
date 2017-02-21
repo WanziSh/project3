@@ -227,17 +227,17 @@ angular.module('myApp')
 			.error(function(errorStr){
 				console.log(errorStr);
 			})
-			self.addeds = function(id){
-				console.log(id);
+			self.addeds = function(){
+//				console.log(id);
 				for( cObj of self.affirm){
 					if(cObj.id ==  $routeParams.idnumber){
 						cObj.numberli += 1;
 						console.log(cObj);
 //						$rootScope.newArr2.push(cObj);
-						console.log("&&&&&&&&&&&&&&");
-						console.log($rootScope.newArr2);
+//						console.log("&&&&&&&&&&&&&&");
+//						console.log($rootScope.newArr2);
 						for( arrObj2 of $rootScope.newArr2){
-							if(arrObj2.id == id){
+							if(arrObj2.id == $routeParams.idnumber){
 								var idv = $rootScope.newArr2.indexOf(arrObj2);
 								var idx = $rootScope.newArr2.lastIndexOf(cObj);
 								if(idv != idx){$rootScope.newArr2.splice(idv,1)}
@@ -246,7 +246,7 @@ angular.module('myApp')
 					}
 				}
 			}
-			self.cuts = function(id){
+			self.cuts = function(){
 				for( cObj of self.affirm){
 					if(cObj.id ==  $routeParams.idnumber){
 						cObj.numberli -= 1;
@@ -256,7 +256,7 @@ angular.module('myApp')
 								var idv = $rootScope.newArr2.indexOf(arrObj2);
 								var idx = $rootScope.newArr2.lastIndexOf(cObj);
 								if(idv != idx){$rootScope.newArr2.splice(idv,1)}
-								console.log($rootScope.newArr2)
+//								console.log($rootScope.newArr2)
 							}
 						}
 					}

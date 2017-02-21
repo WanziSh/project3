@@ -53,9 +53,9 @@
 			<div class="number">
 				<span class="select">选择数量</span>
 				<div ng-repeat="item8 in introduceCtrl.affirm">
-					<p class="cut" ng-click="introduceCtrl.cuts(item8.id)"> - </p>
-					<p class="tonumber"> {{ item8.numberli }} </p>
-					<p class="added" ng-click="introduceCtrl.addeds(item8.id)" > + </p>
+					<p class="cut" ng-click="introduceCtrl.cuts()"> - </p>
+					<p class="tonumber"> {{ introduceCtrl.numberli }} </p>
+					<p class="added" ng-click="introduceCtrl.addeds()" > + </p>
 				</div>
 			</div>
 		</div>
